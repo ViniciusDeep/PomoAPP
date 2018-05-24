@@ -22,6 +22,9 @@
                                 <rect key="frame" x="172" y="483" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="playAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hNk-Xm-9x3"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEn-v1-fYQ">
                                 <rect key="frame" x="166" y="155" width="38" height="21"/>
@@ -36,6 +39,7 @@
                     </view>
                     <connections>
                         <outlet property="countTime" destination="lEn-v1-fYQ" id="y5E-8w-sUG"/>
+                        <outlet property="startTimeAc" destination="U1W-4O-CaP" id="Ned-Vj-XV0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

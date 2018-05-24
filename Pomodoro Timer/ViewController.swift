@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var countTime: UILabel!
+    @IBOutlet weak var startTimeAc: UIButton!
+    
     
     
     override func viewDidLoad() {
@@ -27,6 +29,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+  
+    @IBAction func playAction(_ sender: Any) {
+    
+    }
+    
+    
 
 }
 
