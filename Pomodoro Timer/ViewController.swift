@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var count = 0;
+    var timer = Timer()
+    
+    
+    @IBOutlet weak var countTime: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
