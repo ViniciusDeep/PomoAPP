@@ -33,7 +33,7 @@ class ViewController: UIViewController {
   
     @IBAction func playAction(_ sender: Any) {
     
-        count = 1
+        count = 1;
         
     }
     
