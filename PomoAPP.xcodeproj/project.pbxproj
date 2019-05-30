@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		9271A43E22A048C300BF0E8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A43D22A048C300BF0E8B /* AppDelegate.swift */; };
-		9271A44022A048C300BF0E8B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A43F22A048C300BF0E8B /* ViewController.swift */; };
-		9271A44322A048C300BF0E8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9271A44122A048C300BF0E8B /* Main.storyboard */; };
 		9271A44522A048C400BF0E8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9271A44422A048C400BF0E8B /* Assets.xcassets */; };
 		9271A44822A048C400BF0E8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9271A44622A048C400BF0E8B /* LaunchScreen.storyboard */; };
 		9271A45322A048C400BF0E8B /* PomoAPPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A45222A048C400BF0E8B /* PomoAPPTests.swift */; };
+		9271A46422A04F2C00BF0E8B /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A46322A04F2C00BF0E8B /* CustomTabBarController.swift */; };
+		9271A46622A0540C00BF0E8B /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A46522A0540C00BF0E8B /* BaseCollectionViewController.swift */; };
+		9271A46C22A0547F00BF0E8B /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A46B22A0547F00BF0E8B /* Reusable.swift */; };
+		9271A46E22A054B500BF0E8B /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A46D22A054B500BF0E8B /* ConfigurableView.swift */; };
+		9271A47022A0552A00BF0E8B /* Reusable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A46F22A0552A00BF0E8B /* Reusable+Extension.swift */; };
+		9271A47222A0554700BF0E8B /* PomoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A47122A0554700BF0E8B /* PomoListController.swift */; };
+		9271A47422A0564D00BF0E8B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A47322A0564D00BF0E8B /* UIColor+Extension.swift */; };
+		9271A47622A0589A00BF0E8B /* PomoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A47522A0589A00BF0E8B /* PomoListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +34,20 @@
 /* Begin PBXFileReference section */
 		9271A43A22A048C300BF0E8B /* PomoAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomoAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9271A43D22A048C300BF0E8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9271A43F22A048C300BF0E8B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9271A44222A048C300BF0E8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9271A44422A048C400BF0E8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9271A44722A048C400BF0E8B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9271A44922A048C400BF0E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9271A44E22A048C400BF0E8B /* PomoAPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomoAPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9271A45222A048C400BF0E8B /* PomoAPPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoAPPTests.swift; sourceTree = "<group>"; };
 		9271A45422A048C400BF0E8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9271A46322A04F2C00BF0E8B /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		9271A46522A0540C00BF0E8B /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
+		9271A46B22A0547F00BF0E8B /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		9271A46D22A054B500BF0E8B /* ConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
+		9271A46F22A0552A00BF0E8B /* Reusable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Reusable+Extension.swift"; sourceTree = "<group>"; };
+		9271A47122A0554700BF0E8B /* PomoListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoListController.swift; sourceTree = "<group>"; };
+		9271A47322A0564D00BF0E8B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		9271A47522A0589A00BF0E8B /* PomoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +89,15 @@
 		9271A43C22A048C300BF0E8B /* PomoAPP */ = {
 			isa = PBXGroup;
 			children = (
-				9271A43D22A048C300BF0E8B /* AppDelegate.swift */,
-				9271A43F22A048C300BF0E8B /* ViewController.swift */,
-				9271A44122A048C300BF0E8B /* Main.storyboard */,
+				9271A46722A0542700BF0E8B /* GeneralLayer */,
+				9271A46222A04DF800BF0E8B /* Settings */,
+				9271A46122A04DF000BF0E8B /* Controllers */,
+				9271A46022A04DED00BF0E8B /* Model */,
+				9271A45F22A04DE600BF0E8B /* ViewModel */,
+				9271A45E22A04DE200BF0E8B /* View */,
 				9271A44422A048C400BF0E8B /* Assets.xcassets */,
-				9271A44622A048C400BF0E8B /* LaunchScreen.storyboard */,
 				9271A44922A048C400BF0E8B /* Info.plist */,
+				9271A44622A048C400BF0E8B /* LaunchScreen.storyboard */,
 			);
 			path = PomoAPP;
 			sourceTree = "<group>";
@@ -94,6 +109,81 @@
 				9271A45422A048C400BF0E8B /* Info.plist */,
 			);
 			path = PomoAPPTests;
+			sourceTree = "<group>";
+		};
+		9271A45E22A04DE200BF0E8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9271A47522A0589A00BF0E8B /* PomoListCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9271A45F22A04DE600BF0E8B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9271A46022A04DED00BF0E8B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9271A46122A04DF000BF0E8B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9271A46322A04F2C00BF0E8B /* CustomTabBarController.swift */,
+				9271A46522A0540C00BF0E8B /* BaseCollectionViewController.swift */,
+				9271A47122A0554700BF0E8B /* PomoListController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9271A46222A04DF800BF0E8B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9271A43D22A048C300BF0E8B /* AppDelegate.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		9271A46722A0542700BF0E8B /* GeneralLayer */ = {
+			isa = PBXGroup;
+			children = (
+				9271A46A22A0543E00BF0E8B /* Helper */,
+				9271A46922A0543700BF0E8B /* Extension */,
+				9271A46822A0543300BF0E8B /* Protocol */,
+			);
+			path = GeneralLayer;
+			sourceTree = "<group>";
+		};
+		9271A46822A0543300BF0E8B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				9271A46B22A0547F00BF0E8B /* Reusable.swift */,
+				9271A46D22A054B500BF0E8B /* ConfigurableView.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		9271A46922A0543700BF0E8B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9271A46F22A0552A00BF0E8B /* Reusable+Extension.swift */,
+				9271A47322A0564D00BF0E8B /* UIColor+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9271A46A22A0543E00BF0E8B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +270,6 @@
 			files = (
 				9271A44822A048C400BF0E8B /* LaunchScreen.storyboard in Resources */,
 				9271A44522A048C400BF0E8B /* Assets.xcassets in Resources */,
-				9271A44322A048C300BF0E8B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,8 +307,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9271A44022A048C300BF0E8B /* ViewController.swift in Sources */,
+				9271A47022A0552A00BF0E8B /* Reusable+Extension.swift in Sources */,
+				9271A46E22A054B500BF0E8B /* ConfigurableView.swift in Sources */,
+				9271A46C22A0547F00BF0E8B /* Reusable.swift in Sources */,
+				9271A46622A0540C00BF0E8B /* BaseCollectionViewController.swift in Sources */,
+				9271A47622A0589A00BF0E8B /* PomoListCell.swift in Sources */,
+				9271A46422A04F2C00BF0E8B /* CustomTabBarController.swift in Sources */,
 				9271A43E22A048C300BF0E8B /* AppDelegate.swift in Sources */,
+				9271A47222A0554700BF0E8B /* PomoListController.swift in Sources */,
+				9271A47422A0564D00BF0E8B /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,14 +338,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9271A44122A048C300BF0E8B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9271A44222A048C300BF0E8B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9271A44622A048C400BF0E8B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
