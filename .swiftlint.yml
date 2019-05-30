@@ -1,0 +1,25 @@
+line_length: 
+ - 500 # warning
+ - 800 # error
+
+function_body_length:
+ - 200 # error
+ - 150 # warning
+
+disabled_rules:
+ - leading_whitespace
+ - force_cast
+ - force_try
+ - identifier_name
+ - opening_brace
+ - trailing_whitespace
+ - void_return
+ - vertical_whitespace
+ - private_over_fileprivate
+ - comma
+ - colon
+ - switch_case_alignment 
+ - trailing_semicolon
+excluded:
+ - PomoAPP IIITests
+ - Pods
