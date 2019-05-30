@@ -19,6 +19,8 @@
 		9271A47222A0554700BF0E8B /* PomoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A47122A0554700BF0E8B /* PomoListController.swift */; };
 		9271A47422A0564D00BF0E8B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A47322A0564D00BF0E8B /* UIColor+Extension.swift */; };
 		9271A47622A0589A00BF0E8B /* PomoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A47522A0589A00BF0E8B /* PomoListCell.swift */; };
+		9271A47822A060FF00BF0E8B /* UIComponents+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A47722A060FF00BF0E8B /* UIComponents+Extension.swift */; };
+		9271A47B22A06FB700BF0E8B /* PomoList+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A47A22A06FB700BF0E8B /* PomoList+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		9271A47122A0554700BF0E8B /* PomoListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoListController.swift; sourceTree = "<group>"; };
 		9271A47322A0564D00BF0E8B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		9271A47522A0589A00BF0E8B /* PomoListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoListCell.swift; sourceTree = "<group>"; };
+		9271A47722A060FF00BF0E8B /* UIComponents+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIComponents+Extension.swift"; sourceTree = "<group>"; };
+		9271A47A22A06FB700BF0E8B /* PomoList+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PomoList+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,9 +140,9 @@
 		9271A46122A04DF000BF0E8B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9271A47922A06F9500BF0E8B /* PomoList */,
 				9271A46322A04F2C00BF0E8B /* CustomTabBarController.swift */,
 				9271A46522A0540C00BF0E8B /* BaseCollectionViewController.swift */,
-				9271A47122A0554700BF0E8B /* PomoListController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -175,6 +179,7 @@
 			children = (
 				9271A46F22A0552A00BF0E8B /* Reusable+Extension.swift */,
 				9271A47322A0564D00BF0E8B /* UIColor+Extension.swift */,
+				9271A47722A060FF00BF0E8B /* UIComponents+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -184,6 +189,15 @@
 			children = (
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		9271A47922A06F9500BF0E8B /* PomoList */ = {
+			isa = PBXGroup;
+			children = (
+				9271A47122A0554700BF0E8B /* PomoListController.swift */,
+				9271A47A22A06FB700BF0E8B /* PomoList+Extension.swift */,
+			);
+			path = PomoList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,7 +324,9 @@
 				9271A47022A0552A00BF0E8B /* Reusable+Extension.swift in Sources */,
 				9271A46E22A054B500BF0E8B /* ConfigurableView.swift in Sources */,
 				9271A46C22A0547F00BF0E8B /* Reusable.swift in Sources */,
+				9271A47822A060FF00BF0E8B /* UIComponents+Extension.swift in Sources */,
 				9271A46622A0540C00BF0E8B /* BaseCollectionViewController.swift in Sources */,
+				9271A47B22A06FB700BF0E8B /* PomoList+Extension.swift in Sources */,
 				9271A47622A0589A00BF0E8B /* PomoListCell.swift in Sources */,
 				9271A46422A04F2C00BF0E8B /* CustomTabBarController.swift in Sources */,
 				9271A43E22A048C300BF0E8B /* AppDelegate.swift in Sources */,

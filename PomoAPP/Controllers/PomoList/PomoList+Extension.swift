@@ -1,5 +1,5 @@
 //
-//  PomoListController.swift
+//  PomoList+Extension.swift
 //  PomoAPP
 //
 //  Created by Vinicius Mangueira Correia on 30/05/19.
@@ -8,17 +8,9 @@
 
 import UIKit
 
-class PomoListController: BaseCollectionViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        setupCollection()
-    }
-}
-
-
 extension PomoListController: UICollectionViewDelegateFlowLayout {
     
-    fileprivate func setupCollection() {
+    public func setupCollection() {
         self.collectionView.backgroundColor = .backgroundColor
         collectionView.register(cellType: PomoListCell.self)
     }
