@@ -11,7 +11,7 @@ import UIKit
 extension CAShapeLayer {
     convenience init(with view: UIView, strokeColor: CGColor, opacity: Float?) {
         self.init()
-        let circularPath = UIBezierPath(arcCenter: CGPoint(x: view.frame.width/2, y: view.frame.height/2), radius: 100, startAngle: 0, endAngle: 2 * CGFloat.pi, clockwise: true)
+        let circularPath = UIBezierPath(arcCenter: CGPoint(x: view.frame.width/2, y: view.frame.height/2), radius: 120, startAngle: 0, endAngle: 2 * CGFloat.pi, clockwise: true)
         self.speed = 0.5
         self.strokeStart = 0
         self.path = circularPath.cgPath
@@ -31,5 +31,23 @@ extension UILabel {
         self.font = UIFont.boldSystemFont(ofSize: textSize)
         self.textColor = color
         self.translatesAutoresizingMaskIntoConstraints = false
+    }
+}
+
+extension UITextField {
+    convenience init(placeHolder: String, backgroundColor: UIColor) {
+        self.init()
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.placeholder = placeHolder
+        self.backgroundColor = backgroundColor
+    }
+}
+
+extension UISlider {
+    convenience init(min: Int, max: Int) {
+        self.init()
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.minimumValue = Float(min)
+        self.maximumValue = Float(max)
     }
 }

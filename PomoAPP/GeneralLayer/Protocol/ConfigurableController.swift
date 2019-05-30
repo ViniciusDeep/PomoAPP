@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+protocol ConfigurableController: class {
+    func setupView()
+    func setupNavigation()
+}
+
+extension ConfigurableController {
+    func setupView(){}
+    func setupNavigation(){}
+}

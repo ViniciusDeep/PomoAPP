@@ -15,6 +15,12 @@ class PomoListController: BaseCollectionViewController {
         setupNavigation()
     }
     fileprivate func setupNavigation() {
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(presentController))
+    }
+    
+    @objc fileprivate func presentController() {
+        let createVc = PomoCreateController()
+        let navigation = UINavigationController(rootViewController: createVc)
+        self.present(navigation, animated: true, completion: nil)
     }
 }
