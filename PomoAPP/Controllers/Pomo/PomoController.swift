@@ -19,18 +19,13 @@ class PomoController: UIViewController {
         playPomo()
     }
     
-    var timer: Timer?
-    var timerAround = 25
-    
+ 
     @objc func playPomo() {
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(runTime), userInfo: nil, repeats: true)
-    }
-    
-    @objc func runTime() {
-        if timerAround != 0  {
-            timerAround -= 1
-            pomoView?.pomoTV.percentageLabel.text = String(timerAround)
+        let timeManager = TimeManager()
+        timeManager.hmsFrom(seconds: 1500) { (minutes, seconds) in
+            let min = timeManager.getStringFrom(seconds: minutes)
+            let sec  = timeManager.getStringFrom(seconds: seconds)
+            print("\(min):\(sec)")
         }
     }
-    
 }

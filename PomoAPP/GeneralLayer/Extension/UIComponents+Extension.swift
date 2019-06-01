@@ -17,7 +17,7 @@ extension CAShapeLayer {
         self.path = circularPath.cgPath
         self.strokeColor = strokeColor
         self.lineWidth = 3
-        self.fillColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1).cgColor
+        self.fillColor = #colorLiteral(red: 0.1215686277, green: 0.01176470611, blue: 0.4235294163, alpha: 1).cgColor
         if let opacity = opacity {
             self.opacity = opacity
         }
