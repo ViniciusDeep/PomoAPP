@@ -11,6 +11,8 @@ import UIKit
 class PomoView: UIView, ConfigurableView {
     lazy var pomoTV = PomoTimerView()
     
+    lazy var pomoPlay = UIButton(backgdroungColor: .green, title: "Play")
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         buildViewHierarchy()
@@ -22,10 +24,17 @@ class PomoView: UIView, ConfigurableView {
     
     func buildViewHierarchy() {
         self.addSubview(pomoTV)
+        self.addSubview(pomoPlay)
     }
     
     func setupConstraints() {
-        
+        NSLayoutConstraint.activate([
+                self.pomoTV.topAnchor.constraint(equalTo: self.topAnchor),
+                self.pomoTV.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+                self.pomoTV.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+                self.pomoPlay.topAnchor.constraint(greaterThanOrEqualToSystemSpacingBelow: pomoTV.bottomAnchor, multiplier: 24),
+                self.pomoPlay.centerXAnchor.constraint(equalTo: self.pomoTV.centerXAnchor)
+            ])
     }
     
     

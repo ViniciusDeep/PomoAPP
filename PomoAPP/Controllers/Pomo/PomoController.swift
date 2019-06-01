@@ -11,20 +11,26 @@ import UIKit
 class PomoController: UIViewController {
     
     var pomo: Pomo?
-    
+    var pomoView: PomoView!
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavigation()
         setupView()
+        playPomo()
     }
     
-    fileprivate func setupView() {
-        let pomoView = PomoView()
-        pomoView.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(pomoView)
-        NSLayoutConstraint.activate([
-                pomoView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
-                pomoView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
-            ])
+    var timer: Timer?
+    var timerAround = 25
+    
+    @objc func playPomo() {
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(runTime), userInfo: nil, repeats: true)
     }
+    
+    @objc func runTime() {
+        if timerAround != 0  {
+            timerAround -= 1
+            pomoView?.pomoTV.percentageLabel.text = String(timerAround)
+        }
+    }
+    
 }

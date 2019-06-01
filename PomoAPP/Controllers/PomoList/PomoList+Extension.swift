@@ -26,7 +26,7 @@ extension PomoListController: UICollectionViewDelegateFlowLayout {
         let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: PomoListCell.self)
         cell.namePomo.text = pomos[indexPath.row].name
         cell.descriptionPomo.text = pomos[indexPath.row].about
-        cell.timeLabel.text = "\(String(pomos[indexPath.row].pomoTime)):00"
+        cell.pomoTV.percentageLabel.text = "\(String(pomos[indexPath.row].pomoTime)):00"
         if let layout = collectionViewLayout as? UICollectionViewFlowLayout {
             layout.scrollDirection = .horizontal
         }

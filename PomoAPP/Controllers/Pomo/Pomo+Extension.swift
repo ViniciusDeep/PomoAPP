@@ -10,6 +10,18 @@ import UIKit
 
 extension PomoController {
     
+    func setupView() {
+        pomoView = PomoView()
+        pomoView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.insertSubview(pomoView, belowSubview: self.view)
+        pomoView.pomoPlay.addTarget(self, action: #selector(playPomo), for: .touchUpInside)
+        NSLayoutConstraint.activate([
+            pomoView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+            pomoView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
+            ])
+    }
+    
+    
     func setupNavigation() {
             self.view.backgroundColor = .backgroundColor
             navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.outlineStrokeColor, NSAttributedString.Key.font: UIFont(name: "Arial", size: 40)!]
