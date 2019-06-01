@@ -6,16 +6,16 @@
 //  Copyright © 2019 Vinicius Mangueira Correia. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-protocol ConfigurableView {
+protocol ConfigurableView: UIView {
     func buildViewHierarchy()
     func setupConstraints()
     func setupAdditionalConfigurantion()
     func setupView()
 }
 
-extension ConfigurableView {
+extension ConfigurableView where Self: UIView {
     func setupView() {
         buildViewHierarchy()
         setupConstraints()

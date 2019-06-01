@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -27,5 +28,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {}
 
-    func applicationWillTerminate(_ application: UIApplication) {}
+    func applicationWillTerminate(_ application: UIApplication) {saveContext()}
+    
+    lazy var persistentContainer: NSPersistentContainer = {
+        let container = NSPersistentContainer(name: "Pomo")
+        
+        container.loadPersistentStores(completionHandler: { (_, error) in
+            if let err = error {
+                print(err)
+            }
+        })
+        return container
+    }()
+    
+    
+    func saveContext() {
+        let context = persistentContainer.viewContext
+        if context.hasChanges {
+            do {
+              try? context.save()
+            }
+        }
+    }
 }

@@ -11,7 +11,7 @@ import UIKit
 extension CAShapeLayer {
     convenience init(with view: UIView, strokeColor: CGColor, opacity: Float?) {
         self.init()
-        let circularPath = UIBezierPath(arcCenter: CGPoint(x: view.frame.width/2, y: view.frame.height/2), radius: 120, startAngle: 0, endAngle: 2 * CGFloat.pi, clockwise: true)
+        let circularPath = UIBezierPath(arcCenter: CGPoint(x: view.frame.width, y: view.frame.height), radius: 120, startAngle: 0, endAngle: 2 * CGFloat.pi, clockwise: true)
         self.speed = 0.5
         self.strokeStart = 0
         self.path = circularPath.cgPath
@@ -49,5 +49,18 @@ extension UISlider {
         self.translatesAutoresizingMaskIntoConstraints = false
         self.minimumValue = Float(min)
         self.maximumValue = Float(max)
+        self.maximumTrackTintColor = .red
+        self.minimumTrackTintColor = .green
+        self.value = Float((min + max)/2)
     }
+}
+
+
+extension UIButton {
+    convenience init(backgdroungColor: UIColor) {
+        self.init()
+        self.layer.cornerRadius = 12
+        self.backgroundColor = backgdroungColor
+    }
+    
 }

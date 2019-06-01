@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+protocol DAO {
+    associatedtype Object
+    func insert(object: Object)
+    func delete(object: Object)
+    func all() -> [Object]
+}

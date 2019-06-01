@@ -6,4 +6,38 @@
 //  Copyright © 2019 Vinicius Mangueira Correia. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import CoreData
+
+public class CoreDataDAO<Element: NSManagedObject>: DAO {
+    public var context: NSManagedObjectContext
+    
+    public init() {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        context = appDelegate.persistentContainer.viewContext
+    }
+    public func insert(object: Element) {
+        context.insert(object)
+        save()
+    }
+    public func delete(object: Element) {
+        context.delete(object)
+        save()
+    }
+    public func all() -> [Element] {
+        let request = NSFetchRequest<Element>(entityName: Element.className)
+        let result =  try! context.fetch(request)
+        return result
+    }
+    public func save() {
+        do {
+            try context.save()
+        } catch {
+            fatalError("This is one more error")
+            
+        }
+    }
+    public func new() -> Element {
+        return NSEntityDescription.insertNewObject(forEntityName: Element.className, into: context) as! Element
+    }
+}

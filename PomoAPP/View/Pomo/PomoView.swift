@@ -1,5 +1,5 @@
 //
-//  NSManagedObject+Extension.swift
+//  PomoView.swift
 //  PomoAPP
 //
 //  Created by Vinicius Mangueira Correia on 31/05/19.
@@ -7,10 +7,3 @@
 //
 
 import Foundation
-import CoreData
-
-extension NSManagedObject {
-    static var className: String {
-        return String(describing: self)
-    }
-}
