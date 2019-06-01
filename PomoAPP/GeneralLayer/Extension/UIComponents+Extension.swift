@@ -57,10 +57,18 @@ extension UISlider {
 
 
 extension UIButton {
-    convenience init(backgdroungColor: UIColor) {
+    convenience init(backgdroungColor: UIColor, title: String) {
         self.init()
-        self.layer.cornerRadius = 12
         self.backgroundColor = backgdroungColor
+        self.setTitle(title, for: .normal)
+        self.titleLabel?.font =  UIFont(name: "Helvetica", size: 20)
+        self.setTitleColor(.white, for: .normal)
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.layer.borderWidth = 1
+        self.layer.cornerRadius = 10
+        self.backgroundColor = #colorLiteral(red: 0.2823529412, green: 0.4745098039, blue: 0.8431372549, alpha: 1)
+        self.layer.borderColor = UIColor.white.cgColor
+        self.widthAnchor.constraint(equalToConstant: 200).isActive = true
     }
     
 }
