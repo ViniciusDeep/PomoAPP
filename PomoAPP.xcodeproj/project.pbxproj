@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		926DAC4822A1FE1D004B0293 /* PomoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926DAC4722A1FE1D004B0293 /* PomoView.swift */; };
+		926DAC4A22A1FF03004B0293 /* Pomo+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926DAC4922A1FF03004B0293 /* Pomo+Extension.swift */; };
+		926DAC4D22A20189004B0293 /* PomoTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926DAC4C22A20189004B0293 /* PomoTimerView.swift */; };
 		9271A43E22A048C300BF0E8B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A43D22A048C300BF0E8B /* AppDelegate.swift */; };
 		9271A44522A048C400BF0E8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9271A44422A048C400BF0E8B /* Assets.xcassets */; };
 		9271A44822A048C400BF0E8B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9271A44622A048C400BF0E8B /* LaunchScreen.storyboard */; };
@@ -25,6 +28,14 @@
 		9271A48522A0800700BF0E8B /* PomoCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A48422A0800700BF0E8B /* PomoCreateView.swift */; };
 		9271A48722A08F9C00BF0E8B /* PomoCreate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A48622A08F9C00BF0E8B /* PomoCreate+Extension.swift */; };
 		9271A48922A098A300BF0E8B /* ConfigurableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A48822A098A300BF0E8B /* ConfigurableController.swift */; };
+		9271A48D22A0A31300BF0E8B /* Pomo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9271A48B22A0A31300BF0E8B /* Pomo.xcdatamodeld */; };
+		9271A49422A0A3C500BF0E8B /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A49322A0A3C500BF0E8B /* DAO.swift */; };
+		9271A49622A0A3D200BF0E8B /* CoreDataDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9271A49522A0A3D200BF0E8B /* CoreDataDAO.swift */; };
+		92E353A422A0A51F00DD53BA /* Pomo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E353A222A0A51F00DD53BA /* Pomo+CoreDataClass.swift */; };
+		92E353A522A0A51F00DD53BA /* Pomo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E353A322A0A51F00DD53BA /* Pomo+CoreDataProperties.swift */; };
+		92E353A822A1456400DD53BA /* NSManagedObject+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E353A722A1456400DD53BA /* NSManagedObject+Extension.swift */; };
+		92E353AC22A15DDC00DD53BA /* PomoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E353AB22A15DDC00DD53BA /* PomoController.swift */; };
+		92E353AE22A1F3CE00DD53BA /* PomoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E353AD22A1F3CE00DD53BA /* PomoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		926DAC4722A1FE1D004B0293 /* PomoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoView.swift; sourceTree = "<group>"; };
+		926DAC4922A1FF03004B0293 /* Pomo+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pomo+Extension.swift"; sourceTree = "<group>"; };
+		926DAC4C22A20189004B0293 /* PomoTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoTimerView.swift; sourceTree = "<group>"; };
 		9271A43A22A048C300BF0E8B /* PomoAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomoAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9271A43D22A048C300BF0E8B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9271A44422A048C400BF0E8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,6 +74,14 @@
 		9271A48422A0800700BF0E8B /* PomoCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoCreateView.swift; sourceTree = "<group>"; };
 		9271A48622A08F9C00BF0E8B /* PomoCreate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PomoCreate+Extension.swift"; sourceTree = "<group>"; };
 		9271A48822A098A300BF0E8B /* ConfigurableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableController.swift; sourceTree = "<group>"; };
+		9271A48C22A0A31300BF0E8B /* PomoAPP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PomoAPP.xcdatamodel; sourceTree = "<group>"; };
+		9271A49322A0A3C500BF0E8B /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
+		9271A49522A0A3D200BF0E8B /* CoreDataDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDAO.swift; sourceTree = "<group>"; };
+		92E353A222A0A51F00DD53BA /* Pomo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pomo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		92E353A322A0A51F00DD53BA /* Pomo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pomo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		92E353A722A1456400DD53BA /* NSManagedObject+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Extension.swift"; sourceTree = "<group>"; };
+		92E353AB22A15DDC00DD53BA /* PomoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoController.swift; sourceTree = "<group>"; };
+		92E353AD22A1F3CE00DD53BA /* PomoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		926DAC4B22A2006E004B0293 /* ModuleComponents */ = {
+			isa = PBXGroup;
+			children = (
+				926DAC4C22A20189004B0293 /* PomoTimerView.swift */,
+			);
+			path = ModuleComponents;
+			sourceTree = "<group>";
+		};
 		9271A43122A048C300BF0E8B = {
 			isa = PBXGroup;
 			children = (
@@ -102,14 +132,14 @@
 			isa = PBXGroup;
 			children = (
 				9271A46722A0542700BF0E8B /* GeneralLayer */,
-				9271A46222A04DF800BF0E8B /* Settings */,
 				9271A46022A04DED00BF0E8B /* Model */,
 				9271A45F22A04DE600BF0E8B /* ViewModel */,
 				9271A46122A04DF000BF0E8B /* Controllers */,
 				9271A45E22A04DE200BF0E8B /* View */,
+				926DAC4B22A2006E004B0293 /* ModuleComponents */,
+				9271A44622A048C400BF0E8B /* LaunchScreen.storyboard */,
 				9271A44922A048C400BF0E8B /* Info.plist */,
 				9271A44422A048C400BF0E8B /* Assets.xcassets */,
-				9271A44622A048C400BF0E8B /* LaunchScreen.storyboard */,
 			);
 			path = PomoAPP;
 			sourceTree = "<group>";
@@ -126,6 +156,7 @@
 		9271A45E22A04DE200BF0E8B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				92E353AF22A1FDD200DD53BA /* Pomo */,
 				9271A48022A07DD200BF0E8B /* PomoCreate */,
 				9271A47F22A07DCA00BF0E8B /* PomoList */,
 			);
@@ -135,6 +166,7 @@
 		9271A45F22A04DE600BF0E8B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				92E353AD22A1F3CE00DD53BA /* PomoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -142,6 +174,8 @@
 		9271A46022A04DED00BF0E8B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				92E353A222A0A51F00DD53BA /* Pomo+CoreDataClass.swift */,
+				92E353A322A0A51F00DD53BA /* Pomo+CoreDataProperties.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -149,10 +183,10 @@
 		9271A46122A04DF000BF0E8B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				92E353AA22A15DB400DD53BA /* Pomo */,
 				9271A47E22A07D8C00BF0E8B /* PomoCreate */,
 				9271A47922A06F9500BF0E8B /* PomoList */,
-				9271A46322A04F2C00BF0E8B /* CustomTabBarController.swift */,
-				9271A46522A0540C00BF0E8B /* BaseCollectionViewController.swift */,
+				92E353A922A15D8E00DD53BA /* GeneralController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -168,6 +202,8 @@
 		9271A46722A0542700BF0E8B /* GeneralLayer */ = {
 			isa = PBXGroup;
 			children = (
+				9271A46222A04DF800BF0E8B /* Settings */,
+				9271A48A22A0A2F500BF0E8B /* CoreData */,
 				9271A46A22A0543E00BF0E8B /* Helper */,
 				9271A46922A0543700BF0E8B /* Extension */,
 				9271A46822A0543300BF0E8B /* Protocol */,
@@ -234,6 +270,59 @@
 				9271A48422A0800700BF0E8B /* PomoCreateView.swift */,
 			);
 			path = PomoCreate;
+			sourceTree = "<group>";
+		};
+		9271A48A22A0A2F500BF0E8B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				92E353A622A143D000DD53BA /* Extension */,
+				9271A49222A0A3BB00BF0E8B /* Manager */,
+				9271A48B22A0A31300BF0E8B /* Pomo.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		9271A49222A0A3BB00BF0E8B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				9271A49322A0A3C500BF0E8B /* DAO.swift */,
+				9271A49522A0A3D200BF0E8B /* CoreDataDAO.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		92E353A622A143D000DD53BA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				92E353A722A1456400DD53BA /* NSManagedObject+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		92E353A922A15D8E00DD53BA /* GeneralController */ = {
+			isa = PBXGroup;
+			children = (
+				9271A46322A04F2C00BF0E8B /* CustomTabBarController.swift */,
+				9271A46522A0540C00BF0E8B /* BaseCollectionViewController.swift */,
+			);
+			path = GeneralController;
+			sourceTree = "<group>";
+		};
+		92E353AA22A15DB400DD53BA /* Pomo */ = {
+			isa = PBXGroup;
+			children = (
+				92E353AB22A15DDC00DD53BA /* PomoController.swift */,
+				926DAC4922A1FF03004B0293 /* Pomo+Extension.swift */,
+			);
+			path = Pomo;
+			sourceTree = "<group>";
+		};
+		92E353AF22A1FDD200DD53BA /* Pomo */ = {
+			isa = PBXGroup;
+			children = (
+				926DAC4722A1FE1D004B0293 /* PomoView.swift */,
+			);
+			path = Pomo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,18 +446,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92E353AC22A15DDC00DD53BA /* PomoController.swift in Sources */,
+				92E353A822A1456400DD53BA /* NSManagedObject+Extension.swift in Sources */,
 				9271A48322A07DE800BF0E8B /* PomoCreateController.swift in Sources */,
 				9271A47022A0552A00BF0E8B /* Reusable+Extension.swift in Sources */,
 				9271A46E22A054B500BF0E8B /* ConfigurableView.swift in Sources */,
+				9271A49622A0A3D200BF0E8B /* CoreDataDAO.swift in Sources */,
 				9271A46C22A0547F00BF0E8B /* Reusable.swift in Sources */,
+				926DAC4D22A20189004B0293 /* PomoTimerView.swift in Sources */,
+				92E353AE22A1F3CE00DD53BA /* PomoViewModel.swift in Sources */,
 				9271A47822A060FF00BF0E8B /* UIComponents+Extension.swift in Sources */,
 				9271A46622A0540C00BF0E8B /* BaseCollectionViewController.swift in Sources */,
 				9271A47B22A06FB700BF0E8B /* PomoList+Extension.swift in Sources */,
 				9271A47622A0589A00BF0E8B /* PomoListCell.swift in Sources */,
+				9271A48D22A0A31300BF0E8B /* Pomo.xcdatamodeld in Sources */,
+				92E353A522A0A51F00DD53BA /* Pomo+CoreDataProperties.swift in Sources */,
 				9271A46422A04F2C00BF0E8B /* CustomTabBarController.swift in Sources */,
+				926DAC4822A1FE1D004B0293 /* PomoView.swift in Sources */,
 				9271A43E22A048C300BF0E8B /* AppDelegate.swift in Sources */,
 				9271A48522A0800700BF0E8B /* PomoCreateView.swift in Sources */,
+				9271A49422A0A3C500BF0E8B /* DAO.swift in Sources */,
 				9271A47222A0554700BF0E8B /* PomoListController.swift in Sources */,
+				926DAC4A22A1FF03004B0293 /* Pomo+Extension.swift in Sources */,
+				92E353A422A0A51F00DD53BA /* Pomo+CoreDataClass.swift in Sources */,
 				9271A48722A08F9C00BF0E8B /* PomoCreate+Extension.swift in Sources */,
 				9271A47422A0564D00BF0E8B /* UIColor+Extension.swift in Sources */,
 				9271A48922A098A300BF0E8B /* ConfigurableController.swift in Sources */,
@@ -630,6 +730,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9271A48B22A0A31300BF0E8B /* Pomo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9271A48C22A0A31300BF0E8B /* PomoAPP.xcdatamodel */,
+			);
+			currentVersion = 9271A48C22A0A31300BF0E8B /* PomoAPP.xcdatamodel */;
+			path = Pomo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9271A43222A048C300BF0E8B /* Project object */;
 }

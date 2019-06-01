@@ -10,8 +10,10 @@ import UIKit
 
 class PomoListCell: UICollectionViewCell, ConfigurableView, Reusable {
 
-    lazy var trackLayer = CAShapeLayer(with: self, strokeColor: #colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1).cgColor,opacity: nil)
-    lazy var trackLayerGray = CAShapeLayer(with: self, strokeColor: #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1).cgColor, opacity: 0.4)
+    let containerView = UIView()
+    
+    lazy var trackLayer = CAShapeLayer(with: self.containerView, strokeColor: #colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1).cgColor,opacity: nil)
+    lazy var trackLayerGray = CAShapeLayer(with: self.containerView, strokeColor: #colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1).cgColor, opacity: 0.4)
     
     lazy var timeLabel = UILabel(text: "25:00", textSize: 36, color: .green)
     
@@ -31,14 +33,16 @@ class PomoListCell: UICollectionViewCell, ConfigurableView, Reusable {
     }
     
     func buildViewHierarchy() {
-        self.layer.addSublayer(trackLayer)
-        self.layer.addSublayer(trackLayerGray)
-        self.addSubview(timeLabel)
         self.addSubview(namePomo)
         self.addSubview(descriptionPomo)
     }
     
     func setupConstraints() {
+        self.addSubview(containerView)
+        containerView.layer.addSublayer(trackLayer)
+        containerView.layer.addSublayer(trackLayerGray)
+        containerView.addSubview(timeLabel)
+        containerView.frame = CGRect(x: self.frame.width/2, y: self.frame.height/2, width: 100, height: 100)
         NSLayoutConstraint.activate([
             self.timeLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             self.timeLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor),

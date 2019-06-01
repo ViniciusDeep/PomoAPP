@@ -11,6 +11,4 @@ import Foundation
 import CoreData
 
 @objc(Pomo)
-public class Pomo: NSManagedObject {
-
-}
+public class Pomo: NSManagedObject {}

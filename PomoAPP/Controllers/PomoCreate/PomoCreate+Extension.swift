@@ -19,7 +19,7 @@ extension PomoCreateController {
         let cancelButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(backToPreview))
         cancelButton.tintColor = .white
         navigationItem.leftBarButtonItem = cancelButton
-        let saveButton = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(backToPreview))
+        let saveButton = UIBarButtonItem(barButtonSystemItem: .save, target: self, action: #selector(createPomo))
         cancelButton.tintColor = .white
         saveButton.tintColor = .white
         navigationItem.leftBarButtonItem = cancelButton

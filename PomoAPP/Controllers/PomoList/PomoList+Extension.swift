@@ -15,8 +15,18 @@ extension PomoListController: UICollectionViewDelegateFlowLayout {
         collectionView.register(cellType: PomoListCell.self)
     }
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let pomoVC = PomoController()
+        pomoVC.pomo = pomos[indexPath.row]
+        let navigation = UINavigationController(rootViewController: pomoVC)
+        self.present(navigation, animated: true, completion: nil)
+    }
+    
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: PomoListCell.self)
+        cell.namePomo.text = pomos[indexPath.row].name
+        cell.descriptionPomo.text = pomos[indexPath.row].about
+        cell.timeLabel.text = "\(String(pomos[indexPath.row].pomoTime)):00"
         if let layout = collectionViewLayout as? UICollectionViewFlowLayout {
             layout.scrollDirection = .horizontal
         }
@@ -24,10 +34,8 @@ extension PomoListController: UICollectionViewDelegateFlowLayout {
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return pomos.count
     }
-    
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return .init(width: self.view.frame.width - 48, height: (self.view.frame.height/1.4))
     }
@@ -35,5 +43,4 @@ extension PomoListController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return .init(top: 10, left: 10, bottom: 10, right: 10)
     }
-    
 }

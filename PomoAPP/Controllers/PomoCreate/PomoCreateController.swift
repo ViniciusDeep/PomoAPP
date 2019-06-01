@@ -29,4 +29,24 @@ class PomoCreateController: UIViewController, ConfigurableController {
             pomoCreateView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor)
             ])
     }
+    
+    @objc public func createPomo() {
+        guard let pomoName = pomoCreateView.pomoNameTf.text else {return}
+        guard let pomoDesc = pomoCreateView.pomoDescriptionTf.text else {return}
+        let pomoTime = pomoCreateView.pomoTime.value
+        let pomoInterval = pomoCreateView.pomoInterval.value
+        
+        let pomoDAO = CoreDataDAO<Pomo>()
+        
+        let pomo = pomoDAO.new()
+        
+        pomo.name = pomoName
+        pomo.about = pomoDesc
+        pomo.pomoInterval = Int16(pomoInterval)
+        pomo.pomoTime = Int16(pomoTime)
+        pomoDAO.insert(object: pomo)
+        
+        
+        self.dismiss(animated: true, completion: nil)
+    }
 }
